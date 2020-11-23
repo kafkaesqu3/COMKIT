@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.1082
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "COMKIT", "COMKIT\COMKIT.csproj", "{8C373042-294E-4AE7-A8D2-ECC7F16D8E7E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SharpReg", "SharpReg\SharpReg.csproj", "{8EF25B00-ED6A-4464-BDEC-17281A4AA52F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8C373042-294E-4AE7-A8D2-ECC7F16D8E7E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8C373042-294E-4AE7-A8D2-ECC7F16D8E7E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8C373042-294E-4AE7-A8D2-ECC7F16D8E7E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8C373042-294E-4AE7-A8D2-ECC7F16D8E7E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8EF25B00-ED6A-4464-BDEC-17281A4AA52F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8EF25B00-ED6A-4464-BDEC-17281A4AA52F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8EF25B00-ED6A-4464-BDEC-17281A4AA52F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8EF25B00-ED6A-4464-BDEC-17281A4AA52F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {9177AE8E-217C-4386-86F4-68987D7121BD}
+	EndGlobalSection
+EndGlobal
