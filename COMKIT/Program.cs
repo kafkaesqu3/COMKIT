@@ -7,6 +7,8 @@ using System.Security.AccessControl;
 using System.Security.Principal;
 using System.Linq;
 using System.Collections.Generic;
+using Microsoft.Management.Infrastructure;
+using System.Collections;
 
 namespace COMKIT
 {
@@ -14,7 +16,7 @@ namespace COMKIT
     {
         static void Main(string[] args)
         {
-            var reg = new Registry();
+            var reg = new RemoteRegistry();
 
 
             // ListKeyVal examples
@@ -44,7 +46,16 @@ namespace COMKIT
             //reg.ListSubKeysRecursively(RegKey: "HKEY_LOCAL_MACHINE\\SOFTWARE\\Classes\\ChromeHTML");
 
             //Write a string example
-            reg.WriteRegistryKey(RegKey: "HKEY_CURRENT_USER\\David", RegKeyValue:"Foo", RegKeyDatatype:"SZ", RegKeyData:"Bar");
+            //reg.WriteRegistryKey(RegKey: "HKEY_CURRENT_USER\\David", RegKeyValue:"Foo", RegKeyDatatype:"SZ", RegKeyData:"Bar");
+
+            //SCServiceHelper.StartServiceSC("RemoteRegistry", true, "localhost");
+            //SCServiceHelper.CheckServiceStatusSC("RemoteRegistry", "localhost");
+
+            RemoteRegServiceHelper.SetStartMode("RemoteRegistry", System.ServiceProcess.ServiceStartMode.Manual, "localhost");
+
+
+            
+
             Console.WriteLine();
 
 
